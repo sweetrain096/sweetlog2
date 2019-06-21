@@ -54,7 +54,7 @@ module.exports = {
             allMarkdownRemark.edges.map((edge) => Object.assign({}, edge.node.frontmatter, {
               description: edge.node.frontmatter.description,
               date: edge.node.frontmatter.date,
-              url: site.siteMetadata.site_url + edge.node.fields.slug,
+              url: site.siteMetadata.site_url.substr(0, site.siteMetadata.site_url.length-1) + edge.node.fields.slug,
               guid: site.siteMetadata.site_url + edge.node.fields.slug,
               custom_elements: [{ 'content:encoded': edge.node.html }]
             }))
@@ -84,7 +84,7 @@ module.exports = {
                 }
               }
             `,
-          output: 'rss.xml'
+          output: '/rss.xml'
         }]
       }
     },
@@ -160,7 +160,7 @@ module.exports = {
             }
           }
         `,
-        output: 'sitemap.xml',
+        output: '/sitemap.xml',
         serialize: ({ site, allSitePage }) => allSitePage.edges.map((edge) => ({
           url: site.siteMetadata.siteUrl + edge.node.path,
           changefreq: 'daily',
