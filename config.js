@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  url: 'https://sweetrain.netlify.com/',
+  url: 'https://sweetrain.netlify.com',
   title: '단비내리는',
   subtitle:
     '개발자를 꿈꾸는 비전공자 학생입니다',
