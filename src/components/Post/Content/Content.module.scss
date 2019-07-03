@@ -19,6 +19,17 @@
   }
 
   &__body {
+    & table {
+      & thead {
+        background-color: rgb(240, 159, 173);
+      }
+      & tbody {
+        background-color: rgb(255, 212, 219)
+      }
+      & th, td {
+        padding: 5px;
+      }
+    }
     & figure {
       @include margin-bottom(1);
 
