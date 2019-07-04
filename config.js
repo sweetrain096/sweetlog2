@@ -36,6 +36,10 @@ module.exports = {
       label: 'problem',
       path: '/category/problem/',
     },
+    {
+      label: 'categories',
+      path: '/categories/'
+    }
   ],
   author: {
     name: 'Rain Han',
