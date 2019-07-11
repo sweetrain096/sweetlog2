@@ -15,6 +15,7 @@ const Layout = ({ children, title, description }: Props) => (
     <Helmet>
       <html lang="en" />
       <title>{title}</title>
+      <meta name="google-site-verification" content="tqJ5CTRVzlxtY-rn0ACl7LdGIaXvFYoIIf6P61K3_J0" />
       <meta name="description" content={description} />
       <meta property="og:site_name" content={title} />
       <meta name="twitter:card" content="summary" />
