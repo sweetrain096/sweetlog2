@@ -12,10 +12,10 @@ tags:
   - "vue-router"
   - "vuex"
   - "vuetify"
-description: ""
+description: "vue router, vuex, vuetify를 이용한 개발환경 구축하기"
 ---
 
-> vue다. 이 포스트에서는 Vue CLI을 이용한 개발 환경 구축을 목표로 한다.
+> 이 포스트에서는 Vue CLI을 이용한 개발 환경 구축을 목표로 한다.
 
 > Vue CLI는 기본적으로 vue만 포함한다. vue를 더욱 잘 이용하기 위해 vue router와 vuex, vue계의 부트스트랩과 같은 vuetify를 사용해본다.
 
