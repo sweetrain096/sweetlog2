@@ -3,7 +3,7 @@ title: "[BAEKJOON] 1260 DFS와 BFS"
 date: "2019-08-29T16:19:15.169Z"
 template: "post"
 draft: false
-slug: "/problem/BAEKJOON_1260"
+slug: "/problem/baekjoon_1260"
 category: "problem"
 tags:
   - "알고리즘문제풀이"
