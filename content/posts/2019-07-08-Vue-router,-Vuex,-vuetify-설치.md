@@ -3,7 +3,7 @@ title: "Vue router, Vuex, vuetify 사용하기"
 date: "2019-07-08T20:30:00.169Z"
 template: "post"
 draft: false
-slug: "/Vue/using-vue-with-vuex-vue-router-vuetify/"
+slug: "/vue/using-vue-with-vuex-vue-router-vuetify/"
 category: "Vue"
 tags:
   - "Vue"
