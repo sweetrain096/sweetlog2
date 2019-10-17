@@ -25,16 +25,20 @@ module.exports = {
       
     },
     {
-      label: 'Blog',
-      path: '/category/blog/',
-    },
-    {
       label: 'tech',
       path: '/category/tech/',
     },
     {
+      label: 'Bixby',
+      path: '/category/bixby/',
+    },
+    {
       label: 'problem',
       path: '/category/problem/',
+    },
+    {
+      label: 'Blog',
+      path: '/category/blog/',
     },
     {
       label: 'categories',
