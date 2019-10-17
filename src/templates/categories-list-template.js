@@ -17,7 +17,7 @@ const CategoriesListTemplate = () => {
       <Page title="Categories">
         <ul>
           {categories.map((category) => (
-            <li key={category.fieldValue}>
+            <li class="cate_list" key={category.fieldValue}>
               <Link to={`/category/${kebabCase(category.fieldValue)}/`}>
                 {category.fieldValue} ({category.totalCount})
               </Link>
@@ -30,3 +30,4 @@ const CategoriesListTemplate = () => {
 };
 
 export default CategoriesListTemplate;
+

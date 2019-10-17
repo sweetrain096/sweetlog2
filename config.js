@@ -36,6 +36,10 @@ module.exports = {
       label: 'problem',
       path: '/category/problem/',
     },
+    {
+      label: 'categories',
+      path: '/categories/'
+    }
   ],
   author: {
     name: 'Rain Han',
@@ -46,7 +50,7 @@ module.exports = {
       telegram: '#',
       twitter: '#',
       github: 'sweetrain096',
-      rss: '#',
+      rss: 'rss.xml',
       vkontakte: '#'
     }
   }

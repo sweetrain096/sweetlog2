@@ -15,7 +15,7 @@ const Author = () => {
           className={styles['author__home']}
           href={"/."}
           rel="noopener noreferrer"
-          target="_blank"
+          // target="_blank"
         >
           <strong>{author.name}</strong> 홈으로 가기
         </a>
