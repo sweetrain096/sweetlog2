@@ -10,14 +10,8 @@ tags:
 - "algorithm"
 - "counting sort"
 - "sort"
-  description: "카운팅 정렬에 대해 알아보자"
+description: "카운팅 정렬에 대해 알아보자"
 ---
-
-
-
-> 가장 작은(큰) 숫자부터 골라 차례대로 정리하는 **선택 정렬**에 대해 알아보자.
-
-
 
 
 

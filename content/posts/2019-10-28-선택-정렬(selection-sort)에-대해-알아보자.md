@@ -10,9 +10,7 @@ tags:
 - "algorithm"
 - "selection sort"
 - "sort"
-  description: "선택 정렬에 대해 알아보자"
-
-
+description: "선택 정렬에 대해 알아보자"
 ---
 
 
