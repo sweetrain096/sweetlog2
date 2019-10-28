@@ -10,8 +10,7 @@ tags:
 - "algorithm"
 - "insertion sort"
 - "sort"
-  description: "삽입 정렬에 대해 알아보자"
-
+description: "삽입 정렬에 대해 알아보자"
 ---
 
 
