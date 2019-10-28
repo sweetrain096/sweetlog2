@@ -54,7 +54,21 @@ tags:
 
 
 
+
+
 ![img](img/Insertion_sort_001.PNG)
+
+a. 정렬된 3과 현재 7을 비교. 변경 x
+
+b. 정렬된 3, 7과 현재 2를 비교. 3 앞으로 삽입
+
+c. 정렬된 2, 3, 7과 현재 5를 비교. 3과 7 사이로 삽입.
+
+d. 정렬된 2, 3, 5, 7과 현재 1을 비교. 2 앞으로 삽입
+
+e. 정렬된 1, 2, 3, 5, 7과 현재 4를 비교. 3과 5 사이로 삽입.
+
+f. 정렬된 1, 2, 3, 4, 5, 7
 
 <br>
 
@@ -63,37 +77,20 @@ tags:
 ### 삽입 정렬 구현 (python)
 
 ```python
-def bubble_sort(data):
-    for i in range(len(data) - 1, 0, -1):
-        print(len(data)-i, "turn")
-        for j in range(i):
-            if data[j] > data[j + 1]:
-                data[j], data[j + 1] = data[j + 1], data[j]  # swap
-                print(f"{data} index {j}, {j+1} swap")
-            else:
-                print(data)
+def insertion_sort(data):
+    for i in range(1, len(data)):   # 현재 바꿀 index == i
+        j = i-1         # 바꿀 인덱스보다 한 칸 앞
+        key = data[i]   # 바꿀 인덱스의 요소값
+        while data[j] > key and j >= 0:
+        # 이미 정렬된 인덱스가 현재 값보다 크고, 가리키는 인덱스가 0보다 크거나 같을때
+            data[j+1] = data[j]     # 계속해서 data는 한칸씩 뒤로 밀린다.
+            j -= 1                  # 인덱스 값을 하나씩 앞으로 당긴다.
+        data[j+1] = key             # while문 탈출시 빈 칸에 key값 넣기
 
-data = [2, 4, 1, 3, 5]
-bubble_sort(data)
+
+data = [3, 5, 2, 6, 7, 1, 4]
+insertion_sort(data)
 print(data)
-```
-
-```
-1 turn
-[2, 4, 1, 3, 5]
-[2, 1, 4, 3, 5] index 1, 2 swap
-[2, 1, 3, 4, 5] index 2, 3 swap
-[2, 1, 3, 4, 5]
-2 turn
-[1, 2, 3, 4, 5] index 0, 1 swap
-[1, 2, 3, 4, 5]
-[1, 2, 3, 4, 5]
-3 turn
-[1, 2, 3, 4, 5]
-[1, 2, 3, 4, 5]
-4 turn
-[1, 2, 3, 4, 5]
-[1, 2, 3, 4, 5]
 ```
 
 
@@ -103,23 +100,21 @@ print(data)
 ```c
 #include <stdio.h>
 
-void bubble_sort(int arr[], int n) {
-	int temp;
-	for (int i = n-1; i > 0; i--) {
-		for (int j = 0; j < i; j++) {
-			if (arr[j] > arr[j + 1]) {
-				temp = arr[j];
-				arr[j] = arr[j + 1];
-				arr[j + 1] = temp;
-			}
+void insertion_sort(int arr[], int n) {
+	int i, j, key;
+	for (i = 1; i < n; i++) {
+		key = arr[i];
+		for (j = i - 1; j >= 0 && arr[j] > key; j--) {
+			arr[j + 1] = arr[j];
 		}
+		arr[j + 1] = key;
 	}
 }
-
 int main(void) {
-	int data[5] = { 2, 4, 1, 3, 5 };
-	int n = 5;
-	bubble_sort(data, n);
+	int data[7] = { 3, 5, 2, 6, 7, 1, 4 };
+	int n = 7;
+	insertion_sort(data, n);
+
 	for (int i = 0; i < n; i++) {
 		printf("%d ", data[i]);
 	}
@@ -134,32 +129,39 @@ int main(void) {
 ### 삽입 정렬의 특징
 
 - 장점
-  - 구현이 간단하다
+  - 시간복잡도가 O(n^2)이나 다른 O(n^2) 알고리즘(선택정렬, 버블정렬) 보다는 빠르다.
+  - 안정 정렬이다. 
+  - in-place 알고리즘이다. 
+  - 구현이 간단하다.
+  - 대부분 이미 정렬되어 있는 경우에 매우 효율적이다.
 - 단점
-  - 하나의 요소가 가장 왼쪽에서 가장 오른쪽으로 이동하기 위해서는 배열에서 모든 다른 원소와 교환되어야한다.
-  - 특정 요소가 최종 정렬 위치에 이미 있는 경우라도 교환되는 일이 일어난다.
-- 일반적으로 자료의 교환(swap)이 자료의 이동(move) 보다 복잡하기 때문에 거의 사용되지 않는다.
+  - 배열의 크기가 클 경우에 적합하지 않다.
+  - 비교적 많은 이동을 포함한다.
 
 <br>
 
 <br>
 
-### 버블 정렬의 시간복잡도
+### 삽입 정렬의 시간복잡도
 
 - O(n^2) => 2중 for문
-- 비교
-  - n-1, n-2, ..., 2, 1번 = n(n-1) / 2
-- 교환
-  - 입력 자료가 역순일 경우(==최악의 경우) 비교 횟수 3번
-    - a 와 b 교환일 때, 
-    - temp = a
-    - a = b
-    - b = temp
-    - 위의 3번의 교환 횟수 필요
-  - 입력 자료가 정렬되어 있는 경우 자료의 이동이 발생하지 않는다.
-- O(3n(n-1)/2) == **O(n^2)**
 
+- 최선의 경우
 
+  - 비교
+    - 외부 루프 n-1번
+  - 교환 없음
+  - T(n) = O(n)
+
+- 최악의 경우
+
+  - 비교
+    - 1 + 2 + 3 + ... + n-2 + n-1 = n(n-1) / 2번
+  - 교환
+    - 각 단계마다 i+2번 이동
+  - T(n) = **O(n^2)**
+
+  
 
 
 
