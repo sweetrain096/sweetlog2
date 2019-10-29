@@ -29,16 +29,16 @@ module.exports = {
       path: '/category/tech/',
     },
     {
+      label: 'Algorithm',
+      path: '/category/algorithm/',
+    },
+    {
       label: 'Bixby',
       path: '/category/bixby/',
     },
     {
       label: 'problem',
       path: '/category/problem/',
-    },
-    {
-      label: 'Blog',
-      path: '/category/blog/',
     },
     {
       label: 'categories',
