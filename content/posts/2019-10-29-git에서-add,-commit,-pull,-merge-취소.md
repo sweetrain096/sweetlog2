@@ -19,6 +19,8 @@ description: "git에서 add, commit, pull, merge를 취소해보자"
 
 1. [git add 취소](#git-add-취소)
 2. [git commit 취소](#git-commit-취소)
+3. [git pull 취소](#git-pull-취소)
+4. [git merge 취소](#git-merge-취소)
 
 
 
