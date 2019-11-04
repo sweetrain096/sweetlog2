@@ -103,7 +103,7 @@ ORIG_HEAD는 이전 작업한 곳의 HEAD이다.
 ### git merge 취소
 
 ```bash
-$ git reset --merge ORIGIN_HEAD
+$ git reset --merge ORIG_HEAD
 ```
 
 git pull 의 취소와 비슷한 맥락이다.
