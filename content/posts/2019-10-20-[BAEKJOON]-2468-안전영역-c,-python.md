@@ -3,7 +3,7 @@ title: "[BAEKJOON] 2468 안전영역 c, python"
 date: "2019-10-20T14:48:59.169Z"
 template: "post"
 draft: false
-slug: "/problem/baekjoon_2468"
+slug: "/problem/baekjoon_2468/"
 category: "problem"
 tags:
   - "알고리즘문제풀이"
