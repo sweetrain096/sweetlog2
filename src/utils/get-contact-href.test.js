@@ -7,5 +7,5 @@ test('getContactHref', () => {
   expect(getContactHref('email', '#')).toBe('mailto:#');
   expect(getContactHref('vkontakte', '#')).toBe('https://vk.com/#');
   expect(getContactHref('telegram', '#')).toBe('telegram:#');
-  expect(getContactHref('rss', '#')).toBe('#');
+  expect(getContactHref('rss', '#')).toBe('https://sweetlog.netlify.com/#');
 });
