@@ -19,6 +19,8 @@ description: "git에서 add, commit, pull, merge를 취소해보자"
 
 1. [git add 취소](#git-add-취소)
 2. [git commit 취소](#git-commit-취소)
+3. [git pull 취소](#git-pull-취소)
+4. [git merge 취소](#git-merge-취소)
 
 
 
@@ -101,7 +103,7 @@ ORIG_HEAD는 이전 작업한 곳의 HEAD이다.
 ### git merge 취소
 
 ```bash
-$ git reset --merge ORIGIN_HEAD
+$ git reset --merge ORIG_HEAD
 ```
 
 git pull 의 취소와 비슷한 맥락이다.
