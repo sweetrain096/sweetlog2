@@ -4,8 +4,8 @@ module.exports = {
   url: 'https://sweetlog.netlify.com',
   title: '단비내리는',
   subtitle:
-    '개발자를 꿈꾸는 비전공자 학생입니다',
-  copyright: '© 2019 rain. Lumen theme from @alxshelepenok',
+    '다시, 단비 내리는 중.',
+  copyright: '© 2020. rain rights reserved. Lumen theme from @alxshelepenok',
   disqusShortname: 'sweetrain',
   postsPerPage: 4,
   googleAnalyticsId: 'UA-141545244-1',
@@ -47,8 +47,8 @@ module.exports = {
   ],
   author: {
     name: 'Rain Han',
-    photo: '/photo.jpg',
-    bio: '개발자를 꿈꾸는 비전공자 학생입니다',
+    photo: '/photo2.jpg',
+    bio: '다시, 단비 내리는 중.',
     contacts: {
       email: 'rainhan96@gmail.com',
       telegram: '#',
