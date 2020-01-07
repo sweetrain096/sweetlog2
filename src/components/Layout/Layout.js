@@ -11,6 +11,7 @@ type Props = {
 };
 
 const Layout = ({ children, title, description }: Props) => (
+  
   <div className={styles.layout}>
     <Helmet>
       <html lang="en" />
