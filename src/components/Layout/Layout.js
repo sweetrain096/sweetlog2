@@ -11,6 +11,9 @@ type Props = {
 };
 
 const Layout = ({ children, title, description }: Props) => (
+  <head>
+      <script data-ad-client="ca-pub-4161990653902092" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  </head>
   
   <div className={styles.layout}>
     <Helmet>
