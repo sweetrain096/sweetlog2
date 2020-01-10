@@ -10,5 +10,3 @@ export default () => {
         </Layout>
     )
 }
-
-export default AddTxt;
