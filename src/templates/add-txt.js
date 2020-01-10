@@ -6,7 +6,7 @@ import Ads from '../../static/ads.txt';
 export default () => {
     return (
         <Layout>
-            {Ads}
+            <pre>{Ads}</pre>
         </Layout>
     )
 }
