@@ -30,7 +30,7 @@ const createPages = async ({ graphql, actions }) => {
   // ads.txt
   createPage({
     path: '/ads.txt',
-    component: path.resolve('./static/ads.txt')
+    component: path.resolve('./src/templates/add-txt.js')
   });
 
   // Posts and pages from markdown
