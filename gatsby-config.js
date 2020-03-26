@@ -174,11 +174,7 @@ module.exports = {
             url: site.siteMetadata.siteUrl + edge.node.path,
             changefreq: 'daily',
             priority: 0.7
-          }), allMarkdownRemark.edges.map((edge) =>({
-            url: site.siteMetadata.siteUrl + edge.node.path,
-            changefreq: 'daily',
-            priority: 0.7
-          }))
+          })
         )
       }
     },
