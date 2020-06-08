@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  url: 'https://sweetlog.netlify.com',
+  url: 'https://sweetlog.netlify.app',
   title: '단비내리는',
   subtitle:
     '다시, 단비 내리는 중.',
