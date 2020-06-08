@@ -16,7 +16,8 @@
     "test": "jest --config ./jest/jest-config.js",
     "test:coverage": "jest --coverage --config ./jest/jest-config.js",
     "test:watch": "jest --watch --config ./jest/jest-config.js",
-    "release": "standard-version"
+    "release": "standard-version",
+    "ionic:build": "node --max-old-space-size=8192 --stack-size=1968 node_modules/@ionic/app-scripts/bin/ionic-app-scripts.js build"
   },
   "repository": "https://github.com/alxshelepenok/gatsby-starter-lumen",
   "author": "Alexander Shelepenok <alxshelepenok@gmail.com>",
