@@ -1,5 +1,5 @@
 [build]
-  publish = "public"
+  publish = "/opt/build/repo/public"
   command = "gatsby build"
 [build.environment]
   YARN_VERSION = "1.3.2"
